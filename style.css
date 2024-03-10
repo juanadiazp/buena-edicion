@@ -1,0 +1,476 @@
+/*acá tengo mis fuentes*/
+
+.rufina-regular {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rufina-bold {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+
+}
+.titulo {
+  background: url(https://as2.ftcdn.net/v2/jpg/02/52/34/75/1000_F_252347511_7vNunhWXrhbuvJ6v7meKytYKWt1CCV59.jpg);
+  height: 200%;
+  width:100%;    
+  padding: 25px;
+  text-align: center;     
+}
+
+   /*cambié los colores de la animación que tomé y los cambié a "verde digital", verde matrix. Estoy familiarizandome con esta nueva idea de acercarme a lo digital, así que pensé en fusionar un fondo clasico con un toque más tecnológico, la animación, la tipografia y el color. Perdon si no uso tildes, lo hago por tu directriz.  Creo que mas adelante te hablare de esto, pero una de mis inspiraciones es un libro de ciberfeminismo que estuve ojeando:Cyberfeminism index de Mindy Seu y por eso surgió esta idea*/ 
+
+  :root {
+    --color-primary:#1b9901;
+    --color-secondary: #8AE570;
+    --color-tertiary: #6DE54A;
+    --color-quaternary: #51E528;
+    --color-quinary: #AAE398;
+  }
+  
+/*Acá va la chachara de la animacion del titulo*/
+  
+  .text_shadowsgrande {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "chakra petch";
+    font-size: calc(2rem + 5vw);
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+
+
+  .text_shadowspequeña {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "chakra petch";
+    font-size: calc(1rem + 3vw);
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+  
+  @keyframes shadows {
+    0% {      text-shadow: none;    }
+    10% {      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);    }
+    30% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);    }
+    40% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),        12px 12px 0 var(--color-quinary);    }
+    50% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),        12px 12px 0 var(--color-quinary);    }
+    60% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),        12px 12px 0 var(--color-quinary);    }
+    70% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);    }
+    80% {      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);    }
+    90% {      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {      text-shadow: none;    }  }
+  
+  @keyframes move {
+    0% {      transform: translate(0px, 0px);    }
+    40% {      transform: translate(-12px, -12px);    }
+    50% {      transform: translate(-12px, -12px);    }
+    60% {      transform: translate(-12px, -12px);    }
+    100% {      transform: translate(0px, 0px);    }  }
+
+/*La razon de esta diagramacion de las palabras del inicio es porque me inspire unos documentos del siglo XVIII y XIX que tienen una portada caracteristica, como las proclamas o proclamaciones.  Lo relaciono con reportes y documentos de independencia, derechos, descubrimientos, etc. Mira este link: https://www.loc.gov/resource/mss41210.mss41210-005_00343_00370/?sp=21, vas a entender a que me refiero. Lo hice porque quiero darle ese caracter historico, impreso, de panfleto, de complot jajaja*/
+
+/*de ahora en adelante, cada clase responderá a un concepto, idea, cualidad, circunstancia que construye la buena editora*/
+
+
+.turbulencia {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+    
+.no-estatico {
+background-color: black;
+font-family: "Rufina";
+font-size: 50px;
+font-weight: 700;
+padding: 100px;
+color: #ffede3;
+}
+
+.en-movimiento {
+font-family: "Honk";
+font-size: 70px;
+animation-name: ladoalado; 
+animation-duration: 10s;
+animation-iteration-count: infinite;
+position: relative;
+margin-top:-100px;
+}
+
+/* La letra de "nada es estático" me gusta porque es la ultima letra que elegiria en el mundo. me hace sentir incomoda. y eso es bueno. Creo que es clave para una editora tener momentos que cuestionen */
+
+@keyframes ladoalado {
+ 0% {transform: translateX(-50%);}
+ 25% {transform: translateX(50%);}
+ 50% {transform: translateX(100%);}
+ 75% {transform: translateX(50%);}
+ 100% {transform: translateX(0%);}
+}
+ /* Esta forma de animar me gustó mucho, la aprendí en YouTube*/
+
+/* la foto de fondo es un recorte de un retrato de Margaret Mead, una antropologa muy importante que me gusta mucho por su acercamiento a las culturas y los viajes que hizo. por eso su foto, por que es un referente de etnografia en su sentido clasico, pero hoy por hoy es necesario tambien, hasta existe la etnografia digital*/
+.etnografa {
+background-image: url(https://www.britannica.com/explore/100women/wp-content/uploads/sites/3/2019/02/Margaret-Mead-scaled.jpg);
+font-family: "Rufina";
+color: #6DE54A ;
+font-size: 50px;
+font-weight: 700;
+padding: 100px;
+width:100%;
+object-fit: none;
+}
+
+.resaltado {
+  background-color: #6DE54A;
+  color: black;
+  width: fit-content;
+  margin-top: -110px;
+  margin-left: 850px;
+}
+
+/* hasta este punto ha sido muy dificil ajustar los tamaños que quiero de fotos y como se distribuyen. En este punto opté por un collage que encontre en internet y me gusto mucho porque dice justo lo mi punto: no hay ninguna verdad absoluta. Todas tenemos verdades y mentiras propias, no?*/
+ 
+.nohayverdades {
+  background-image: url(https://t3.ftcdn.net/jpg/06/09/77/72/240_F_609777246_RloteQ6y8sfxr1zLwztJvxVs6yatAyHq.jpg);
+  width: 100%;
+  object-fit: none;
+  padding: 100px;
+  height: 500px;
+}
+ /*creo que esta sera la unica clase que use, y decidi ponerla porque me he dado cuenta que en esta labor no se puede ir a los extremos y a los radicalizmos en el momento de definir la labor editorial. curiosamente puse que no mas dicotomias, mientras contrasto dos ideas. */
+
+#nomasdicotomias {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#nomasdicotomias > div {
+  width: 50%;
+}
+
+.retazos {
+  font-family: "Rufina";
+  color: #ffede3;
+  background-color: black;
+  font-size: 30px;
+  padding: 100px;
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  width: 50%;
+}
+/* tengo como a donna haraway hablandome al oido, pero efectiamente la edicion ahora es ciborg, por que no*/
+.ciborg {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  width: 50%;
+  font-family: "Chakra Petch";
+  font-size: 70px;
+  font-weight: bolder;
+  color: #1b9901;
+  text-align: right;
+  text-shadow: 5px  0px 0px white,
+            0px  5px 0px white,
+          -5px  0px 0px white,
+            0px -5px 0px white;
+  line-height: 80px;
+  margin-top: -50px;
+  margin-bottom: -70px;
+}
+
+/* aqui coloque una lluvia de tres gotas que se refiere a ese deseo de empaparse de sentido social. cada gotica tiene un numbre segun su aporte, y terminan encontrandose en un punto comun*/
+.sentidosocial {
+  background-color: #ffede3; 
+  width: 100%;
+  height: 950px;
+  display: inline-block;
+  font-family: "Rufina";
+  font-size: 20px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.democratizar {
+  padding: 100px;
+}
+
+.publico {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  filter: blur(0px); 
+  animation: caer 3s infinite; 
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(50deg);
+  transform-origin: left;
+  left: 900px;
+  margin-top: 2700px;
+}
+
+.para-todxs {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  filter: blur(0px); 
+  animation: caer 3s infinite; 
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(50deg);
+  transform-origin: left;
+  left: 800px;
+  margin-top: 2700px;
+}
+
+.sin-excepcion {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  filter: blur(0px); 
+  animation: caer 3s infinite;
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(50deg);
+  transform-origin: left;
+  left: 700px;
+  margin-top: 2700px;
+}
+
+@keyframes caer {
+  0% {    top: -100px; }
+  100% {    top: 380px; }
+}
+
+.innovar {
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  color: #ffede3;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  font-family: "Chakra Petch";
+  width: 350px;
+  height: 350px;
+  margin-top: -100px;
+  margin-left: 600px;
+  z-index:2;
+}
+
+/* profe esto de aca abajo fue muy crack, dure como un dia completo buscando y descifrando como ponerle un filtro a un solo elemento de un div sin que repercuta en los otros, eso es con ::before, brutal jajaja. tuve muchos problemas para agregar esa imagen de los formatos, que tambien, son mayormente digitales intencionalmente*/
+
+.formato::before {
+  content: "";
+  background-image: url(https://as2.ftcdn.net/v2/jpg/07/05/16/99/1000_F_705169951_mq89vE7d3gS0PUrzC7oiZuAsN7QP1TUz.jpg);
+  filter: grayscale(100%); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;  
+}
+.formato {
+  background-image: none; 
+  object-fit: none;
+  position: absolute;
+  top: 3100px;
+  width: 100%;
+  height: 500px;
+  margin-top: 0;
+  z-index: 0;
+}
+
+
+/*creo que esta clase se explica sola*/
+.por-amor-al-arte {
+  background-color: #8AE570;
+  padding: 100px;
+  font-family: "Chakra Petch";
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  height: 400px;
+}
+
+.destruir {
+  font-size: 40px;
+  position: relative;
+  top: -50px;
+
+}
+
+.redestruir {
+  font-size: 30px;
+  position: relative;
+  top: -90px;
+}
+
+.explotar {
+  font-size: 15px;
+  position: relative;
+  top: -120px;
+}
+
+/* lo anterior puede ser extraño pero me parecio muy divertido cuestionar la prudencia... asi que quise burlarme un poco de ella, como cuando escuchas tanto una palabra que comienza a sonar rara? asi, como con saciedad semantica. asi se debe editar, imprudentemente, si las palabras nos van a cansar que sean las que nos limitan*/
+
+.sin-censura {
+  background-color: black;
+  font-family: "Rufina";
+  font-size: 50px;
+  color: white;
+  width: 50%;
+  height: 600px;
+}
+
+.ser-voz {
+  padding: 100px;
+}
+
+.ver {
+  color: #6DE54A;
+  position: relative;
+  top: -145px;
+  left: 100px;
+}
+
+.escuchar{
+  position: relative;
+  left: 100px;
+  top: -210px;
+  color: #1b9901;
+}
+/*aca va animacion con js para que se trascienda mas la idea de ver y escuchar. no se como hacer un sonido aca jajaja pero la animacion de escuchar me parece que imita una onda de sonido*/
+.escuchar .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.escuchar .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.sin-etnocentrismo {
+  background-color: #d2ffc4;
+  font-family: "Rufina";
+  font-size: 50px;
+  color: black;
+}
+
+.pertenecer {
+padding: 100px;
+  text-align: right;
+}
+
+.llamativo {
+  font-family: "honk";
+  position: relative;
+  top: -150px;
+  right: 100px;
+  text-align: right;
+}
+
+/* aqui quise poner la foto del nacimiento de venus de botticelli porque es un cuadro hermoso que representa no solo el nacimiento de una mujer (editora9 si no que plantea dicotomias y debates. se siente muy natural y humana dentro de su misticidad. me parecio apropiada*/
+.la-editora-es-ordinaria {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/61/El_nacimiento_de_Venus%2C_por_Sandro_Botticelli.jpg);
+  width: 100%;
+  height: 600px;
+  object-fit: none;
+  display: inline-block;
+  font-family: "Rufina"; 
+  font-size: 50px;
+}
+
+.humana {
+  background-color:#ffede3;
+  width: 40%;
+  height: min-content;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  text-align: center;
+}
+
+/*fue hasta este punto del codigo que entendi como hacer para dejar ese borde blanco todo feo*/
+body {
+    margin: 0px;
+}
+
+/*he logrado resolver la mayoria de problemas que se me han presentado, sin molestar he "codeado" unas 15 horas en los ultimos 5 dias, entonces ya estoy muy cansada y no supe como poner mas fotos, queria poner las de unas mujeres inspiradoras pero ya realmente estoy cansada. asi que retome la imagen del inicio y la nombro "investigar" porque no hay que dejar de conocer mas y mas, de donde sea que venga el conocimiento, todo bienvenido*/
+.investigar {
+  background-image: url(https://as2.ftcdn.net/v2/jpg/02/52/34/75/1000_F_252347511_7vNunhWXrhbuvJ6v7meKytYKWt1CCV59.jpg);
+  width: 100%;
+}
+
+/* este cierre me encantó. creo que no es necesario explicar este id*/
+#cualidades {
+    width: 100vw;
+    height: 180pt;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    margin-top: 130px;
+    display: inline-block;
+    font-family: "Rufina", sans-serif;
+    font-weight: 700;
+    font-size: 80pt;
+    text-align: center;
+    padding: center;
+    user-select: none;
+}
+
+/* intenté trabajar con una paleta de tres colores: rojo, verde y negro en sus diferentes opacidades. Verde por lo ciber, rojo por la pasion y negro porque me hace pensar en cuanto amo la tinta impresa. quise tomar mis referentes y mezclarlos con fotografias, enfatizar imitando un resaltado para simular un texto fisico. elegi 3 tipografias, dos que use en el "cuerpo de texto", una serif y una display, y otra como para jugar jajajaja. busque que hayn momentos muy intensos y otros de mas calma para expresar mi emocion frente a ciertos temas y opiniones. mi concepto sería: digital/collage/cuadrosdetexto/contrastesydicotomias/desorden/yo*/
